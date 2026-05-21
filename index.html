@@ -3,118 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaludLife | Sistema de Citas Médicas</title>
+    <title>SaludLife | Presentación del Sistema</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="side-nav">
-        <a href="#inicio">IN</a>
-        <a href="#levantamiento">01</a>
-        <a href="#tecnologias">02</a>
-        <a href="#requerimientos">03</a>
-        <a href="#basedatos">04</a>
-        <a href="#codigo">05</a>
-        <a href="#alcance">06</a>
-        <a href="#futuro">07</a>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-icon">💠</span> SaludLife
+           <!--  IMAGEN LOGO DEL PROYECTO -->
+           <!--  <img src="logo2.png" alt="Logo del Proyecto" class="logo2-img"> -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#funcionamiento">Funcionamiento</a></li>
+            <li><a href="#herramientas">Herramientas</a></li>
+            <li><a href="#modelos">Modelos (UML/MER)</a></li>
+            <li><a href="#requisitos">Requisitos</a></li>
+        </ul>
+        <a href="#futuro" class="nav-btn-entrar">Futuro</a>
     </nav>
 
-    <header id="inicio" class="full-page hero">
-        <div class="hero-content">
-            <h1>SaludLife</h1>
-            <div class="divider"></div>
-            <p>Gestión de citas médicas</p>
+    <header id="inicio" class="full-page section-hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>SaludLife</h1>
+                <p class="subtitle">Sistema de Gestión de Citas Médicas</p>
+                
+                <div class="project-info">
+                    <h3>Desarrollado por:</h3>
+                    <ul>
+                        <li>Juan Jose Acevedo Melo</li><br>
+                        <li>Brayan Alejandro Castro Moreno</li>
+                        </ul>
+                </div>
+            </div>
+            
+            <div class="hero-video">
+                <div class="video-container">
+                    <video controls poster="image_dcd67f.jpg">
+                        <source src="VideoSistema.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="levantamiento" class="full-page">
-    <div class="container">
-        <span class="section-number">01</span>
-        <h2>Levantamiento de Información</h2>
-        <p>Se identificó la necesidad de un sistema centralizado para evitar la duplicidad de registros y optimizar la agenda de los especialistas médicos.</p>
-    </div>
-</section>
+    <!-- <section id="presentacion" class="full-page section-light">
+        <div class="container">
+            <span class="section-number">01</span>
+            <h2>Presentación del Sistema</h2>
+            <p>SaludLife es un sistema de citas medicas orientado a las </p>
+        </div>
+    </section> -->
 
-    <section id="tecnologias" class="full-page section-dark">
+    <section id="problema" class="full-page section-dark">
         <div class="container">
             <span class="section-number">02</span>
-            <h2>Tecnologías Utilizadas</h2>
-            <ul class="tech-list">
-                <li><strong>Backend:</strong> Java con NetBeans</li>
-                <li><strong>Base de Datos:</strong> MySQL / MariaDB (Schema: sistemaclinico)</li>
-                <li><strong>Frontend Web:</strong> HTML5, CSS3 y JavaScript</li>
-                <li><strong>Editor:</strong> Visual Studio Code</li>
+            <h2>Problema</h2>
+            <p>Mediante una entrevista y visualizacion del proceso de guardado de informacion, pudimos verificar los siguientes riesgos:</p>
+            <ul class="problem-highlights">
+                <li>Riesgo de pérdida de datos por falta de respaldo adecuado.</li>
+                <li>Inconsistencias en la información debido a errores humanos.</li>
+                <li>Dificultad para acceder a datos históricos de pacientes y citas.</li>
             </ul>
+            <br><p>Estos problemas pueden llegar a afectar la eficiencia y calidad del servicio médico.</p>
         </div>
     </section>
 
-    <section id="requerimientos" class="full-page section-banners">
+    <section id="funcionamiento" class="full-page section-funcionamiento">
     <div class="container">
         <span class="section-number">03</span>
-        <h2>Requerimientos del Sistema</h2>
+        <h2>¿Cómo Funciona el Sistema?</h2>
+        <p class="section-description">
+            El sistema tiene como objetivo principal optimizar los procesos clínicos mediante una herramienta tecnológica que reduce errores humanos y mejora el acceso a la información, tanto de pacientes, como secretarias, medicos y/o citas medicas.
+        </p>
         
-        <div class="banner-grid">
-            
-            <div class="banner-item">
-                <li>Requerimientos Funcionales</li><br>
-                <img src="requerimientosfuncionales.png" alt="Requerimientos Funcionales" class="responsive-banner">
-                </div>
-            
-            <div class="banner-item">
-                <br><li>Requerimientos No Funcionales</li><br>
-                <img src="requerimientosNoFuncionales.png" alt="Requerimientos No Funcionales" class="responsive-banner">
-                </div>
-            
+        <div class="features-container">
+            <div class="info-card">
+                <div class="card-icon">🖥️</div>
+                <h3>Interfaces Gráficas</h3>
+                <p>Garantizan que el usuario final interactúe con una plataforma intuitiva y facil de usar.</p>
+            </div>
+
+            <div class="info-card">
+                <div class="card-icon">🏗️</div>
+                <h3>Organización Modular</h3>
+                <p>Gracias a una arquitectura por capas, mantenemos el código perfectamente organizado, desacoplado y fácil de mantener o actualizar.</p>
+            </div>
+
+            <div class="info-card validation-card">
+                <div class="card-icon">🛡️</div>
+                <h3>Validación de Información</h3>
+                <p class="validation-intro">Garantiza la integridad de los datos antes de ser almacenados en la base de datos mediante controles:</p>
+                <ul class="custom-validation-list">
+                    <li><strong>Campos Obligatorios:</strong> Verificación de que no existan valores vacíos.</li>
+                    <li><strong>Validación de Documentos:</strong> Control de formato correcto.</li>
+                    <li><strong>Control de Fechas:</strong> En el módulo de Nueva Cita, la fecha debe ser seleccionada en el JCalendar.</li>
+                    <li><strong>Seguridad de Login:</strong> Comparación de credenciales con la base de datos.</li>
+                </ul>
+            </div>
         </div>
-        
     </div>
 </section>
 
-    <section id="basedatos" class="full-page section-light">
-    <div class="container">
-        <span class="section-number">04</span>
-        <h2>Estructura del Sistema (UML)</h2>
-        <p>Diagrama de clases diseñado para el manejo eficiente de la clínica SaludLife.</p>
-        
-        <div class="uml-container">
-            <img src="UML.jpg" alt="Diagrama de Clases UML" class="uml-image">
-        </div>
-    </div>
-</section>
-
-    <section id="codigo" class="full-page section-dark">
+    <section id="herramientas" class="full-page section-dark">
         <div class="container">
-            <span class="section-number">05</span>
-            <h2>Lógica del Código</h2>
-            <div class="code-wrapper">
-                <pre><code>// Implementación de lógica en Java Swing
-public void registrarCita() {
-    // Código para insertar en la tabla de citas
-}</code></pre>
+            <span class="section-number">04</span>
+            <h2>Herramientas Usadas</h2>
+            <div class="tools-grid">
+                <div class="tool-item">Lenguaje: Java.</div>
+                <div class="tool-item">Base de datos: MySQL.</div>
+                <div class="tool-item">Gestor de Base de datos: phpMyAdmin.</div>
+                <div class="tool-item">Entorno de desarrollo: NetBeans IDE 22.</div>
+                <div class="tool-item">Librerias usadas: MySQL Connector, JCalender, JDBC.</div>
+                <div class="tool-item">Patron de diseño: Singleton.</div>
+                <div class="tool-item">Arquitectura: Por Capas.</div>
+                <div class="tool-item">Diagramas: Draw.io</div>
             </div>
         </div>
     </section>
 
-    <section id="alcance" class="full-page section-gradient">
+    <section id="modelos" class="full-page section-light">
+        <div class="container">
+            <span class="section-number">05</span>
+            <h2>UML y MR</h2>
+            <p>Estructura relacional y de clases diseñada para el esquema de la base de datos y funcionamiento del sistema.</p>
+            <div class="uml-box">
+                <img src="UML.jpg" alt="Diagrama UML" class="project-img">
+            </div>
+             <div class="mer-box">
+                <img src="MR.png" alt="Diagrama MER" class="project-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="requisitos" class="full-page section-blue">
         <div class="container">
             <span class="section-number">06</span>
-            <h2>Alcance del Sistema</h2>
-            <p>El sistema permite el control total de citas locales, gestión de expedientes básicos y generación de reportes de atención.</p>
+            <h2>Requisitos del Sistema</h2>
+            <div class="banners-container">
+                <div class="img-banner-item">
+                    <img src="RF.png" alt="Requerimientos Funcionales">
+                </div>
+                <div class="img-banner-item">
+                    <img src="RNF.png" alt="Requerimientos No Funcionales">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partes_importantes" class="full-page section-bluelight">
+        <div class="container">
+            <span class="section-number">07</span>
+            <h2>Partes importantes</h2>
+            <div class="banners-container">
+                <ul class="future-highlights">
+                <li>Uso de CRUD: El sistema permitió Insertar, actualizar, eliminar y listar Paciente, usuarios, citas y médicos.</li>
+                <li>Uso de clases DAO: Sirvió para separar el acceso a los datos, se aplico en PacienteDAO, UsuarioDAO, CitaDAO, etc.</li>
+                <li>Formularios internos: Usamos MDI (FrmPrincipal) y JInternalFrame para poder tener multiples ventanas interactivas.</li>
+            </div>
         </div>
     </section>
 
     <section id="futuro" class="full-page section-dark">
         <div class="container">
-            <span class="section-number">07</span>
+            <span class="section-number">08</span>
             <h2>Futuros Implementos</h2>
-            <div class="future-grid">
-                <div class="f-item">Módulo de Farmacia e Inventario</div>
-                <div class="f-item">Notificaciones vía Email/WhatsApp</div>
-                <div class="f-item">App móvil para pacientes</div>
+            <div class="tools-grid">
+               <div class="tool-item">Migrar a una pagina Web.</div>
+                <div class="tool-item">Reportes.</div>
+                <div class="tool-item">Respaldo en la nube.</div>
+                <div class="tool-item">Calendario mas inteligente.</div>
+                <div class="tool-item">Notificaciones automaticas.</div>
+                <div class="tool-item">Historia clinica digital.</div>
+                <div class="tool-item">Diferentes perspectivas de usuarios (medico, secretarias y pacientes).</div>
+                <div class="tool-item">Hacer el menu reutilizable (No migrar).</div>
+                <div class="tool-item">Mejorar el calendario (No migrar)</div>
+                <div class="tool-item">Mejorar el diseño (No migrar)</div>
+                <div class="tool-item">Diferentes perspectivas de usuarios (No migrar)</div>
             </div>
         </div>
     </section>
+    
 
 </body>
 </html>
